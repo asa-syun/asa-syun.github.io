@@ -1,0 +1,115 @@
+/* スタイルリセット */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f4f4f4; /* 背景色 */
+  color: #333; /* テキスト色 */
+}
+
+/* ヘッダーのスタイル */
+#header {
+  background-color: #333; /* ヘッダー背景色 */
+  color: #fff; /* ヘッダー文字色 */
+  padding: 20px 0;
+  text-align: center;
+}
+
+.logo-title {
+  font-size: 2rem; /* ロゴタイトルサイズ */
+}
+
+.logo-desc {
+  font-size: 1.2rem; /* ロゴ説明サイズ */
+}
+
+/* ナビゲーションのスタイル */
+#gnav ul {
+  list-style-type: none; /* リストのスタイルを解除 */
+  display: flex; /* フレックスボックス */
+  justify-content: center; /* 中央揃え */
+}
+
+#gnav li {
+  margin: 0 15px; /* リストアイテム間のスペース */
+}
+
+#gnav a {
+  color: #333; /* リンクの色 */
+  text-decoration: none; /* 下線を消す */
+}
+
+/* セクションのスタイル */
+.section {
+  padding: 50px 20px; /* セクションの内側余白 */
+  background-color: #fff; /* セクション背景色 */
+  margin: 20px 0; /* セクションの外側余白 */
+  border-radius: 8px; /* セクション角丸 */
+}
+
+/* スキルテーブルのスタイル */
+.skill-table {
+  width: 100%; /* 幅を100%に */
+  border-collapse: collapse; /* ボーダーの重なりを解消 */
+}
+
+/* 二列の画像とテキストの整列 */
+.two-column-wrapper {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+/* プロフィール画像のスタイル */
+.profile img {
+  /* border-radius: 50%; 
+  border: 4px solid GREEN; */
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  object-fit: cover; /* ADD */
+ }
+
+/* 二列画像のスタイル */
+ .two-column-image img {
+  margin: 0 auto;
+}
+
+/* 二列文章のスタイル */
+.two-column-desc {
+  width: 62%;
+}
+
+.skill-table th,
+.skill-table td {
+  border: 1px solid #ddd; /* セルボーダー */
+  padding: 10px; /* セル内余白 */
+  text-align: left; /* 左揃え */
+}
+
+.section-title {
+  font-size: 1.5rem; /* セクションタイトルサイズ */
+  margin-bottom: 20px; /* セクションタイトル下のスペース */
+}
+
+/* フッターのスタイル */
+#footer {
+  text-align: center; /* 中央揃え */
+  padding: 20px 0; /* フッターの内側余白 */
+  background-color: #333; /* フッター背景色 */
+  color: #fff; /* フッター文字色 */
+}
