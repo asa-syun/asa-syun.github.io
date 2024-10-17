@@ -8,40 +8,41 @@
     <meta property="og:description" content="浅野俊輔のポートフォリオです。">
     <meta property="og:image" content="img/ogp.png">
     <meta name="description" content="浅野俊輔のポートフォリオです。">
-    <title>Taichi Suzuki's Portfolio</title>
+    <title>Syunsuke Asano's Portfolio</title>
     <link href="https://fonts.googleapis.com/css?family=Oswald:700" rel="stylesheet">
-    <link href="css/style_all.css" rel="stylesheet" type="text/css">
     <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/style_all.css" rel="stylesheet" type="text/css">
     <link rel="shortcut icon" href="img/favicon.ico">
 </head>
+
 <body>
     <div id="wrapper">
         <header id="header">
-            <h1 class="logo">
-                <span class="logo-title">浅野俊輔のポートフォリオ</span>
-                <span class="logo-desc">ゲームエンジニア</span>
-            </h1>
+            <div class="header-container">
+                <h1><span>Asano Portfolio</span></h1>
+                <nav id="gnav">
+                    <ul>
+                        <li><a href="#Profile">プロフィール</a></li>
+                        <li><a href="#skill">スキル</a></li>
+                        <li><a href="#works">作品</a></li>
+                        <li><a href="#contact">お問い合わせ</a></li>
+                    </ul>
+                </nav>
+            </div>
         </header>
-        <nav id="gnav">
-            <ul>
-                <li><a href="#Profile">プロフィール</a></li>
-                <li><a href="#skill">スキル</a></li>
-                <li><a href="#works">作品</a></li>
-                <li><a href="#contact">お問い合わせ</a></li>
-            </ul>
-        </nav>
+
         <main id="contents">
             <section class="section" id="Profile">
                 <div class="section-title-block">
-                  <h2 class="section-title">
-                    <div class="top-icon-aspect-ratio">
-                      <img src="img/portfolio_profile_top_image.png" alt="プロフィールトップ画像">
-                      <span class="section-title-css">PROFILE</span>
-                    </div>
-                  </h2>
-                  <div class="two-column-wrapper">
+                    <h2 class="section-title">
+                        <div class="top-icon-aspect-ratio">
+                            <img src="img/portfolio_profile_top_image.png" alt="プロフィールトップ画像">
+                            <span class="section-title-css">PROFILE</span>
+                        </div>
+                    </h2>
+                    <div class="two-column-wrapper">
                         <div class="two-column-image profile">
-                            <img src="img/profile.jpg" alt="プロフィール画像" align="left"/> <!-- 画像挿入箇所: プロフィール画像 -->
+                            <img src="img/profile.jpg" alt="プロフィール画像" align="left"/> 
                         </div>
                         <div class="two-column-desc">
                             <p>はじめまして。23歳のゲームエンジニア、浅野俊輔です。専門学校を卒業後、1年4カ月間、ゲーム開発関連業務でクライアントエンジニアとしてUnityでC#を使用していました。不具合の修正やオフライン版の移行に携わり、その後、就労移行支援に通っています。</p>
@@ -50,84 +51,104 @@
                 </div>
             </section>
 
-      <section class="section" id="skill">
-        <div class="section-title-block">
-          <h2 class="section-title">
-            <div class="top-icon-aspect-ratio">
-              <img src="img/portfolio_skill_top_image.png" alt="スキルトップ画像">
-              <span class="section-title-css">SKILL</span>
-            </div>
-          </h2>
-          <p class="section-desc"></p>
-          <table class="skill-table">
-            <thead>
-              <tr>
-                <th>言語</th>
-                <th>使用期間</th>
-                <th>レベル</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>C# (Unity)</td>
-                <td>4年2カ月</td>
-                <td>★★★★</td>
-              </tr>
-              <tr>
-                <td>C++</td>
-                <td>2年</td>
-                <td>★★★</td>
-              </tr>
-              <tr>
-                <td>PHP</td>
-                <td>6カ月</td>
-                <td>★★</td>
-              </tr>
-              <tr>
-                <td>Ruby</td>
-                <td>4カ月</td>
-                <td>★</td>
-              </tr>
-              <tr>
-                <td>MySQL</td>
-                <td>4カ月</td>
-                <td>★</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </section>
-    </div>
-    
-      <section class="section" id="works">
-        <div class="works-list">
-          <h2 class="section-title">
-            <!--<div>
-              <img src="img/portfolio" alt="スキルトップ画像">
-            </div>-->
-            <!--画像挿入箇所：トップアイコン画像-->
-              <span class="section-title-css">WORKS</span>
-          </h2>
-            <!-- 作品1 - パズルゲームのチーム制作について -->
-            <a class="works-item" href="works-template.html">
-                <p class="works-img"><img src="img/works-sample-thumb.jpg" alt="パズルゲーム"></p>
-                <p class="works-name"><font size="6" face="けいふぉんと">チーム制作 パズルゲーム</font></p>
-                <p class="works-info"><font size="3" face="けいふぉんと">使用エンジン: Unity, 言語: C#</font></p>
-            </a>
-            <!-- 画像挿入箇所: パズルゲームのサンプル画像 -->
-      </section>
+            <section class="section" id="skill">
+                <div class="section-title-block">
+                    <h2 class="section-title">
+                        <div class="top-icon-aspect-ratio">
+                            <img src="img/portfolio_skill_top_image.png" alt="スキルトップ画像">
+                            <span class="section-title-css">SKILL</span>
+                        </div>
+                    </h2>
+                    <table class="skill-table">
+                        <thead>
+                            <tr>
+                                <th>言語</th>
+                                <th>使用期間</th>
+                                <th>レベル</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>C# (Unity)</td>
+                                <td>4年2カ月</td>
+                                <td>★★★★</td>
+                            </tr>
+                            <tr>
+                                <td>C++</td>
+                                <td>2年</td>
+                                <td>★★★</td>
+                            </tr>
+                            <tr>
+                                <td>PHP</td>
+                                <td>6カ月</td>
+                                <td>★★</td>
+                            </tr>
+                            <tr>
+                                <td>Ruby</td>
+                                <td>4カ月</td>
+                                <td>★</td>
+                            </tr>
+                            <tr>
+                                <td>MySQL</td>
+                                <td>4カ月</td>
+                                <td>★</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
 
-      <section class="section" id="contact">
-        <div class="section-title-block">
-          <h2 class="section-title">CONTACT</h2>
-          <p>お問い合わせは<a href="mailto:example@example.com">こちら</a>まで。</p>
-        </div>
-      </section>
-    </main>
-    
-    <footer id="footer">
-      <p>&copy; 2024 浅野俊輔. All rights reserved.</p>
-    </footer>
-  </div>
+            <section class="section" id="works">
+                <div class="section-title-block">
+                    <h2 class="section-title">
+                        <div class="top-icon-aspect-ratio">
+                            <img src="img/portfolio_skill_top_image.png" alt="作品表のトップ画像">
+                            <span class="section-title-css">WORKS</span>
+                        </div>
+                    </h2>
+
+                    <div class="works-container">
+                        <a class="works-item" href="works-template.html">
+                            <p class="works-img"><img src="img/works-sample-thumb.jpg" alt="パズルゲーム"></p>
+                            <p class="works-name"><font size="6" face="けいふぉんと">チーム制作 パズルゲーム</font></p>
+                            <p class="works-info"><font size="3" face="けいふぉんと">使用エンジン: Unity, 言語: C#</font></p>
+                        </a>
+                        <a class="works-item" href="works-template.html">
+                            <p class="works-img"><img src="img/works-sample-thumb.jpg" alt="作品2ゲーム"></p>
+                            <p class="works-name"><font size="6" face="けいふぉんと">個人制作 作品2ゲーム</font></p>
+                            <p class="works-info"><font size="3" face="けいふぉんと">使用エンジン: Unity, 言語: C#</font></p>
+                        </a>
+                        <a class="works-item" href="works-template.html">
+                            <p class="works-img"><img src="img/works-sample-thumb.jpg" alt="作品100ゲーム"></p>
+                            <p class="works-name"><font size="6" face="けいふぉんと">個人制作 作品100ゲーム</font></p>
+                            <p class="works-info"><font size="3" face="けいふぉんと">使用エンジン: Unity, 言語: C#</font></p>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section" id="contact">
+                <div class="section-title-block">
+                    <h2 class="section-title">CONTACT</h2>
+                    <p>お問い合わせは<a href="mailto:example@example.com">こちら</a>まで。</p>
+                </div>
+            </section>
+        </main>
+
+        <footer id="footer">
+            <p>&copy; 2024 浅野俊輔. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>

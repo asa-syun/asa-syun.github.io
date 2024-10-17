@@ -15,7 +15,7 @@ body {
 #header {
   background-color: #333; /* ヘッダー背景色 */
   color: #fff; /* ヘッダー文字色 */
-  padding: 20px 0;
+  padding: px 0;
   text-align: center;
 }
 
@@ -148,4 +148,96 @@ body {
   padding: 20px 0; /* フッターの内側余白 */
   background-color: #333; /* フッター背景色 */
   color: #fff; /* フッター文字色 */
+}
+
+/* 作品一覧コンテナを横並びにする */
+.works-container {
+  display: flex;
+  justify-content: space-between; /* 作品間にスペースを均等に配置 */
+  flex-wrap: wrap; /* 画面サイズに応じて折り返し */
+}
+
+/* 各作品のアイテム */
+.works-item {
+  width: calc(33% - 20px); /* 3列表示、20pxの余白を考慮 */
+  text-align: center; /* 中央揃え */
+  background-color: #fff; /* 背景色 */
+  border-radius: 8px; /* 角丸 */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 影を追加 */
+  padding: 20px; /* 内側余白 */
+  transition: transform 0.3s ease; /* ホバー時のアニメーション */
+}
+
+/* 作品アイテムのホバー時の拡大 */
+.works-item:hover {
+  transform: translateY(-10px); /* マウスオーバーで浮き上がる効果 */
+}
+
+/* 作品画像のスタイル */
+.works-img img {
+  max-width: 100%; /* 画像をコンテナの幅に合わせる */
+  height: auto; /* 縦横比を維持 */
+  border-radius: 8px; /* 画像の角を丸める */
+}
+
+/* 作品名と詳細のフォント調整 */
+.works-name {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.works-info {
+  font-size: 1rem;
+  color: #666;
+}
+
+
+/* ヘッダーのスタイル */
+.header-container {
+  display: flex;               /* 横並びにする */
+  justify-content: space-between; /* タイトルを左、ナビを右に配置 */
+  align-items: center;          /* 縦方向の中央揃え */
+}
+
+/* ナビゲーションのスタイル */
+#gnav ul {
+  list-style-type: none; /* リストのスタイルを解除 */
+  display: flex; /* フレックスボックス */
+  justify-content: flex-end; /* 右揃え */
+}
+
+#gnav li {
+  margin-left: 15px; /* リストアイテム間のスペース */
+}
+
+/* リンクの色 */
+#gnav a {
+  color: #fff; /* リンクの色 */
+  text-decoration: none; /* 下線を消す */
+}
+
+/* ヘッダーとテキスト色 */
+#header {
+  background-color: #333; /* 背景色を#333に変更 */
+  color: #fff; /* テキスト色を白に設定 */
+}
+
+/* スムーズなスクロールをCSSでも設定（最新ブラウザ対応） */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ヘッダーの追尾設定 */
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; /* ヘッダーを画面の幅いっぱいに */
+  z-index: 1000; /* 他の要素より上に表示 */
+}
+
+/* ヘッダーが固定されるため、コンテンツとの重なりを防ぐための余白を追加 */
+body {
+  padding-top: 80px; /* ヘッダーの高さ分の余白を追加 */
 }
